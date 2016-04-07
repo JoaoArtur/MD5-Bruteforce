@@ -1,0 +1,65 @@
+/*
+**
+** All rights reserved (c) 2016-17
+** Coded by K3N1 && designed by zanutsec
+**
+*/
+ 
+html,* {
+    padding: 0;
+    margin: 0;
+}
+ 
+body {
+    background: #ddd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+ 
+h1 {
+    margin: 40px auto;
+    padding: 5px;
+}
+ 
+input[type=text] {
+    font-family: 'Raleway', sans-serif;
+    width: 320px;
+    padding: 10px;
+    background: white;
+    border-radius: 3px;
+    border: 0;
+}
+ 
+input[type=submit] {
+    font-family: 'Raleway', sans-serif;
+    width: 230px;
+    padding: 10px;
+    background: #16a085;
+    border-radius: 3px;
+    border: 0;
+}
+ 
+p {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    /*padding: 20px;*/
+    font-size: 11pt;
+}
+.ok {
+    color: #2ecc71;
+    font-family: 'Raleway', sans-serif;
+}
+.okspan {
+    color: #27ae60;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+.notok {
+    color: #e74c3c;
+    font-family: 'Raleway', sans-serif;
+}
+.notokspan {
+    color: #c0392b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
