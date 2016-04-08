@@ -1,6 +1,6 @@
 <?php
 	/*
-		MD5 BruteForce
+		MD5 BruteForce v1.1
 		Coded by João Artur (K3N1)
 		Designed by ZanutSec
 	*/
