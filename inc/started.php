@@ -2,6 +2,7 @@
 	$file = htmlspecialchars($_POST['wordlist']);
 	$hash = htmlspecialchars($_POST['hash']);
 	$filesline = explode("\n",file_get_contents($file));
+	$atual=0;
 ?>
 <html>
 <head>
@@ -17,6 +18,7 @@
 			<h2>Coded by K3N1</h2>
 			<h2>Designed by ZanutSec</h2>
 			<h3>Trying to brute: <?=$hash?></h3>
+			<h3>Wordlist contains <?=count($filesline)?> words</h3>
 			<br />
 			<?php
 				foreach ($filesline as $line) {
@@ -26,7 +28,8 @@
 							echo "<p class='ok'>[+] The hash {$hash} means: <span class='okspan'>{$line}</span></p>";
 							$stoped=true;
 						} else {
-							echo "<p class='notok'>[-] Trying to get the mean of <span class='notokspan'>{$hash}</span></p>";
+							$atual=$atual+1;
+							echo "<p class='notok'>".$atual." / ".count($filesline)." | Trying to get the mean of <span class='notokspan'>{$hash}</span></p>";
 							$stoped=false;
 						}
 					}
